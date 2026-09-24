@@ -1,0 +1,93 @@
+/* Reserved Row — warm-athletic design tokens.
+   One accent (clay), warm neutrals, state colours used sparingly. */
+
+:root {
+  --bg: #fbf5ec;
+  --surface: #ffffff;
+  --surface-sunk: #f2e9db;
+  --line: #e7dccb;
+  --line-strong: #d8c7ac;
+
+  --ink: #201b14;
+  --ink-2: #5b5245;
+  --ink-3: #8b7f6c;
+
+  --clay: #c14a1e;
+  --clay-strong: #a63c16;
+  --clay-soft: #f6e2d5;
+  --on-clay: #fff6f0;
+
+  --live: #2f6d4c;
+  --live-soft: #e2ece2;
+  --warn: #a8690f;
+  --warn-soft: #f6e8ce;
+  --alert: #ab2f20;
+  --alert-soft: #f6ddd7;
+
+  --font: "Hanken Grotesque", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    sans-serif;
+
+  --step--1: 0.79rem;
+  --step-0: 0.95rem;
+  --step-1: 1.15rem;
+  --step-2: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem);
+  --step-3: clamp(1.9rem, 1.5rem + 1.8vw, 2.9rem);
+  --step-4: clamp(2.6rem, 1.9rem + 3vw, 4rem);
+
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 72px;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 20px;
+  --shadow: 0 1px 2px rgba(45, 28, 10, 0.06), 0 14px 34px -18px rgba(45, 28, 10, 0.22);
+  --shadow-sm: 0 1px 2px rgba(45, 28, 10, 0.08);
+  --shadow-pop: 0 2px 6px rgba(45, 28, 10, 0.1), 0 18px 40px -22px rgba(193, 74, 30, 0.5);
+  --ring: 0 0 0 3px rgba(193, 74, 30, 0.32);
+
+  /* member booking screen: lane A = clay, lane B = ink */
+  --lane-a: var(--clay);
+  --lane-a-soft: var(--clay-soft);
+  --lane-b: var(--ink);
+  --lane-b-soft: var(--surface-sunk);
+  --book-max: 460px;
+
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191512;
+    --surface: #221d18;
+    --surface-sunk: #17120f;
+    --line: #332b23;
+    --line-strong: #463b30;
+
+    --ink: #f1e8da;
+    --ink-2: #c2b5a1;
+    --ink-3: #8d8070;
+
+    --clay: #e0692f;
+    --clay-strong: #ef7a3f;
+    --clay-soft: #3a241a;
+    --on-clay: #1c1109;
+
+    --live: #63b98a;
+    --live-soft: #1e2c24;
+    --warn: #d59a4f;
+    --warn-soft: #302416;
+    --alert: #e2665a;
+    --alert-soft: #331b18;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.34), 0 16px 36px -18px rgba(0, 0, 0, 0.6);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --ring: 0 0 0 3px rgba(224, 105, 47, 0.4);
+  }
+}

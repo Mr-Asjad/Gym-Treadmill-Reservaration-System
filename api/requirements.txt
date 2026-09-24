@@ -1,0 +1,10 @@
+# Reserved Row API -- HTTP layer over booking-service + integration (nudge engine).
+fastapi>=0.111
+uvicorn[standard]>=0.30
+
+# dev / test (httpx also backs fastapi.testclient)
+httpx>=0.27
+pytest>=7.0
+
+# only if run with SCHEDULER_MODE=cpsat:
+#   ortools>=9.8

@@ -1,0 +1,16 @@
+# The core geometry (homography.project / zones / smoothing / occupancy / tracker)
+# is pure Python. Everything else needs these:
+
+numpy>=1.24            # homography solve/inverse, array ops
+opencv-python>=4.8     # video decode, warpPerspective (bird's-eye), drawing
+ultralytics>=8.1       # YOLOv8-pose person + keypoint detector
+
+# playground.py UI
+streamlit>=1.29
+pandas>=2.0
+streamlit-image-coordinates>=0.1   # click the floor quad + drag the zones
+
+# dev / test
+pytest>=7.0
+
+# note: `yolov8n-pose.pt` (~6.5 MB) auto-downloads on first run.

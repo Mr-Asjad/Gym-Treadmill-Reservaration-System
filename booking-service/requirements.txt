@@ -1,0 +1,8 @@
+# The booking service core (models, simple scheduler, store, events, service) is
+# pure Python standard library -- no install needed to run Phase 1 / 2 / 4.
+
+# CP-SAT scheduler mode (SCHEDULER_MODE=cpsat, Phase 5) additionally needs:
+ortools>=9.8
+
+# dev / test
+pytest>=7.0
